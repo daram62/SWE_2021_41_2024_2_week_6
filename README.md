@@ -57,3 +57,44 @@
      ```bash
      docker inspect --format="{{ .HostConfig.Binds }}" ossp-container
      ```
+5. **과제 실행 결과**
+   -
+   아래 내용을 한 번에 복사해서 README.md 파일에 붙여넣을 수 있습니다.
+
+
+
+## Week 5 - Docker 활용
+
+### 1. Docker 환경 설정 확인
+
+#### 1.1 OS 정보 확인
+```bash
+docker exec ossp-container cat /etc/os-release```
+```
+PRETTY_NAME="Ubuntu 24.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.1 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo```
+
+```
+docker exec ossp-container git --version```
+```
+git version 2.43.0```
+```
+docker exec ossp-container python3 --version```
+```
+Python 3.12.3```
+```
+docker inspect --format="{{ .HostConfig.Binds }}" ossp-container```
+```
+[/Users/daram/Desktop:/mnt/desktop]
+```
