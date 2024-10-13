@@ -3,25 +3,25 @@
 ## Week 4 - Google Colab 학습
 
 1. **Google Colab**
-- Jupyternotebook development environment based on Cloud server4
-- Accessibility, Resources, Collaboration
+  - Jupyternotebook development environment based on Cloud server4
+  - Accessibility, Resources, Collaboration
   
 2. **Assignment**
-- **Happy Number**
-Write an algorithm to determine if a number **n** is happy.
-- 풀이 코드 :
-- ```python
+  - **Happy Number**
+  Write an algorithm to determine if a number **n** is happy.
+  - 풀이 코드 
+  ```python
   def isHappy(n):
   exist = set()
   while n != 1 and n not in exist:
     exist.add(n)
     n = sum([int(i)**2 for i in str(n)])
-  return n == 1
+    return n == 1
 
   print(isHappy(19))
   print(isHappy(2))
   ```
-- 풀이 과정 :
+  - 풀이 과정 :
   숫자의 각 자릿수 제곱의 합이 1이 되면 True를 반환하도록 작성
   이미 처리한 숫자는 집합에 저장해 중복을 방지하고, 무한 루프가 발생하면 False를 반환.
 ---
