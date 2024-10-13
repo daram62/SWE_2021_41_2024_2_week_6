@@ -59,42 +59,45 @@
      ```
 ### 5. **과제 실행 결과**
   **5.1 OS 정보**
-   ```bash
-    docker exec ossp-container cat /etc/os-release
-   ```
-   ```
-    PRETTY_NAME="Ubuntu 24.04.1 LTS"
-    NAME="Ubuntu"
-    VERSION_ID="24.04"
-    VERSION="24.04.1 LTS (Noble Numbat)"
-    VERSION_CODENAME=noble
-    ID=ubuntu
-    ID_LIKE=debian
-    HOME_URL="https://www.ubuntu.com/"
-    SUPPORT_URL="https://help.ubuntu.com/"
-    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-    UBUNTU_CODENAME=noble
-    LOGO=ubuntu-logo
-   ```
-    **5.2 Git 버전**
-    ```
-    docker exec ossp-container git --version
-    ```
-    ```
-    git version 2.43.0
-    ```
-    **5.3 Python 버전**
-    ```
-    docker exec ossp-container python3 --version
-    ```
-    ```
-    Python 3.12.3
-    ```
-    **5.4 바인드 마운트 설정**
-    ```
-    docker inspect --format="{{ .HostConfig.Binds }}" ossp-container
-    ```
-    ```
-    [/Users/daram/Desktop:/mnt/desktop]
-    ```
+  ```bash
+  docker exec ossp-container cat /etc/os-release
+  ```
+  ```
+  PRETTY_NAME="Ubuntu 24.04.1 LTS"
+  NAME="Ubuntu"
+  VERSION_ID="24.04"
+  VERSION="24.04.1 LTS (Noble Numbat)"
+  VERSION_CODENAME=noble
+  ID=ubuntu
+  ID_LIKE=debian
+  HOME_URL="https://www.ubuntu.com/"
+  SUPPORT_URL="https://help.ubuntu.com/"
+  BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+  PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+  UBUNTU_CODENAME=noble
+  LOGO=ubuntu-logo
+  ```
+
+  **5.2 Git 버전**  
+  ```
+  docker exec ossp-container git --version
+  ```
+  ```
+  git version 2.43.0
+  ```
+  
+  **5.3 Python 버전**
+  ```
+  docker exec ossp-container python3 --version
+  ```
+  ```
+  Python 3.12.3
+  ```
+  
+  **5.4 바인드 마운트 설정**
+  ```
+  docker inspect --format="{{ .HostConfig.Binds }}" ossp-container
+  ```
+  ```
+  [/Users/daram/Desktop:/mnt/desktop]
+  ```
