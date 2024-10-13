@@ -9,9 +9,9 @@
 2. **Assignment**
 - **Happy Number**
 Write an algorithm to determine if a number **n** is happy.
-- 풀이 코드
+- 풀이 코드 : 
 https://github.com/daram62/SWE_2021_41_2024_2_week_4/blob/main/2021312602_Minseo_Kim.ipynb
-- 풀이 과정
+- 풀이 과정 :
   숫자의 각 자릿수 제곱의 합이 1이 되면 True를 반환하도록 작성
   이미 처리한 숫자는 집합에 저장해 중복을 방지하고, 무한 루프가 발생하면 False를 반환.
 ---
