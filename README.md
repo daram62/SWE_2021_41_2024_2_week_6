@@ -58,6 +58,7 @@
      docker inspect --format="{{ .HostConfig.Binds }}" ossp-container
      ```
 5. **과제 실행 결과**
+   **5.1 OS 정보**
    ```bash
     docker exec ossp-container cat /etc/os-release
    ```
@@ -76,19 +77,21 @@
     UBUNTU_CODENAME=noble
     LOGO=ubuntu-logo
    ```
-    
+    **5.2 Git 버전**
     ```
     docker exec ossp-container git --version
     ```
     ```
     git version 2.43.0
     ```
+    **5.3 Python 버전**
     ```
     docker exec ossp-container python3 --version
     ```
     ```
     Python 3.12.3
     ```
+    **5.4 바인드 마운트 설정**
     ```
     docker inspect --format="{{ .HostConfig.Binds }}" ossp-container
     ```
